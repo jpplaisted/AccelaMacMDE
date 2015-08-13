@@ -7,31 +7,29 @@ if (wfTask == "Initial Investigation" && wfStatus == "No Violation") {
 	if (parentArray && parentArray.length > 0) for (thisParent in parentArray) if (parentArray[thisParent]) AInfo['capId = parentArray[thisParent];
 	closeTask("Investigation","No Violation Found","","");
 	capId = holdCapId;
-	'];
 	}
 
 if (wfTask == "Follow-Up Investigation" && wfStatus == "Violation Corrected") {
 	closeTask("Case Closed","Closed","","");
-	if (parentArray && parentArray.length > 0) for (thisParent in parentArray) if (parentArray[thisParent]) AInfo['capId = parentArray[thisParent];
+	if (parentArray && parentArray.length > 0) for (thisParent in parentArray) if (parentArray[thisParent]) AInfo['capId'] = parentArray[thisParent];
 	closeTask("Investigation","Corrected","","");
 	capId = holdCapId;
-	'];
 	}
 
 if (wfTask == "Follow-Up Investigation" && wfStatus == "Violation Abated") {
 	closeTask("Case Closed","Closed","","");
-	if (parentArray && parentArray.length > 0) for (thisParent in parentArray) if (parentArray[thisParent]) AInfo['capId = parentArray[thisParent];
+	if (parentArray && parentArray.length > 0) for (thisParent in parentArray) if (parentArray[thisParent]) AInfo['capId'] = parentArray[thisParent];
 	closeTask("Investigation","Corrected","","");
 	capId = holdCapId;
-	'];
+	
 	}
 
 if (wfTask == "Issue Citation" && wfStatus == "Violation Corrected") {
 	closeTask("Case Closed","Closed","","");
-	if (parentArray && parentArray.length > 0) for (thisParent in parentArray) if (parentArray[thisParent]) AInfo['capId = parentArray[thisParent];
+	if (parentArray && parentArray.length > 0) for (thisParent in parentArray) if (parentArray[thisParent]) AInfo['capId'] = parentArray[thisParent];
 	closeTask("Investigation","Corrected","","");
 	capId = holdCapId;
-	'];
+	
 	}
 
 if (wfTask == "Issue Citation" && wfStatus == "Violation Abated") {
